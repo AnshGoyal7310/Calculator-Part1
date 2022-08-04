@@ -1,0 +1,71 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   user-select: none;
+}
+
+html, body{
+   height: 100%;
+}
+
+body{
+   display: grid;
+   place-items: center;
+   background: #c9cbcf;
+}
+
+.calculator{
+   width: 330px;
+   background: #c9cbcf;
+   padding: 4rem 3rem;
+   border-radius: 1rem;
+   box-shadow: -3px -3px 5px #ffffff24, 2px 2px 5px rgba(97, 101, 121, 0.288);
+}
+
+form .result{
+   height: 60px;
+   width: 100%;
+   background: #c9cbcf;
+   border-radius: 5px;
+   box-shadow: inset -3px -3px 5px #ffffff73, inset 2px 2px 5px rgba(97, 101, 121, 0.288);
+}
+
+.result input{
+   width: 100%;
+   height: 100%;
+   background: none;
+   border: none;
+   outline: none;
+   font-size: 30px;
+   padding: 0 20px;
+   text-align: right;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+   color: #595959;
+   pointer-events: none;
+}
+
+form .buttons{
+   text-align: center;
+   padding: 30px 0 0 0;
+}
+
+.buttons input[type="button"]{
+   height: 56px;
+   width: 56px;
+   font-size: 23px;
+   margin: 4px 0px;
+   border: none;
+   outline: none;
+   background: #c9cbcf;
+   border-radius: 5px;
+   color: #595959;
+   box-shadow: -3px -3px 5px #ffffff73, 2px 2px 5px rgba(97, 101, 121, 0.288);
+}
+
+.buttons input[type="button"]:focus {
+   color: #3498db;
+   transform: scale(0.9);
+   box-shadow: inset -3px -3px 5px #ffffff73, inset 2px 2px 5px rgba(97, 101, 121, 0.288);
+}
